@@ -1,0 +1,121 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Rainbow background with smooth animation */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, red, orange, yellow, green, violet);
+    background-size: 300% 300%;
+    animation: rainbowBackground 10s ease infinite;
+    color: black;
+    text-align: center;
+}
+
+/* Rainbow background animation */
+@keyframes rainbowBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Styling the container */
+.container {
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background for readability */
+}
+
+/* Title of the learning session */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, blue, indigo, violet);
+    background-clip: text;
+    color: transparent;
+    animation: rainbowText 5s ease-in-out infinite;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Animating rainbow colors for the header text */
+@keyframes rainbowText {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
+
+/* Styling the lesson box */
+#lesson-box {
+    background-color: white;
+    border: 2px solid #0275d8;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Lesson Title */
+#lesson-box h3 {
+    font-size: 1.8rem;
+    color: #0275d8;
+}
+
+/* Lesson Description */
+#lesson-box p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Button styling */
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background: linear-gradient(90deg, red, orange, green, blue, indigo, violet);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.5s ease, transform 0.3s ease;
+    margin-top: 30px;
+}
+
+/* Button hover effect */
+button:hover {
+    background: linear-gradient(90deg, violet, indigo, blue, green, yellow, orange, red);
+    transform: scale(1.1);
+}
+
+/* Next lesson button style */
+.next-lesson-button {
+    background-color: #0275d8;
+    margin-top: 20px;
+}
+
+.next-lesson-button:hover {
+    background-color: #025aa5;
+}
